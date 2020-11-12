@@ -57,6 +57,12 @@ public final class AHDownloadButton: UIView {
             startDownloadButton.titleLabel?.font = startDownloadButtonTitleFont
         }
     }
+
+    public var startDownloadButtonImage: UIImage? = UIImage() {
+        didSet {
+            startDownloadButton.setImage(startDownloadButtonImage, for: .normal)
+        }
+    }
     
     public var startDownloadButtonTitleSidePadding: CGFloat = 12
     
